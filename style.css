@@ -1,0 +1,97 @@
+/* header, main{
+    background: #0a9bcc;
+} */
+.bgbody{
+    padding-top: 20px;
+    background: #39297b;
+    color: #fff;
+}
+.search-container input{
+    background-color: #d6d6d6;
+}
+form button{
+    /* padding: 0; */
+    /* background-color: #08b008; */
+    border: none;
+    background: none;
+    color: #fff;
+}
+.images-container img{
+    width: 300px;
+    height: 280px;
+}
+.images-container .imageDiv{
+    position: relative;
+}
+.imageDiv .overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.imageDiv:hover .overlay{
+    height: 100%;
+}
+.imageDiv .overlay h3{
+    color: #fff;
+    display: none;
+    text-align: center;
+
+}
+.imageDiv:hover .overlay h3{
+    display: block;
+}
+.imageDiv .overlay button{
+    color: #000;
+    display: none;
+    text-align: center;
+}
+.imageDiv:hover .overlay button{
+    position: absolute;
+    display: block;
+     /* width: 40px; */
+    /* height: 40px;  */
+    font-size: 20px;
+    margin-bottom: 75% ;
+    margin-left: 60%;
+    color: #cc5b0a;
+    background: none;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    /* background: transparent; */
+    border: none;
+    /* padding: auto; */
+}
+
+.imageDiv .overlay .button2{
+    color: #000;
+    display: none;
+    text-align: center;
+}
+.imageDiv:hover .overlay .button2{
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 75% ;
+    margin-left: 85%;
+    color: #0a9bcc;
+    background: none;
+    border: none;
+}
+
+.images-container{
+    margin-block: 50px;
+}
+.loadMoreBtn{
+    
+    font-weight: 700;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #08b008;
+    display: none;
+}
